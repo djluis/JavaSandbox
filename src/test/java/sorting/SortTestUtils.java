@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.Random;
 
-public class SortUtils {
+public class SortTestUtils {
     public static int[] randomArrayGenerator(int size) {
         int[] randomArray = new int[size];
         Random rnd = new Random();

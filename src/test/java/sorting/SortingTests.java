@@ -9,8 +9,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static sorting.SortUtils.isArraySorted;
-import static sorting.SortUtils.randomArrayGenerator;
+import static sorting.SortTestUtils.isArraySorted;
+import static sorting.SortTestUtils.randomArrayGenerator;
 
 
 public class SortingTests {
@@ -37,10 +37,10 @@ public class SortingTests {
 
     static Stream<SortAlgorithm> sortAlgorithms() {
         return Stream.of(
+                new HeapSort(),
                 new MergeSort(),
                 new QuickSort(),
-                new BubbleSort(),
-                new HeapSort()
+                new BubbleSort()
         );
     }
 

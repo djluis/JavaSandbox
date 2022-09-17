@@ -19,6 +19,10 @@ JIT compile suprises
 
 * n -> Array size
 
+## Result
+
+![Test report](src/main/resources/SortingTestsReport.png)
+
 # Search Algorithms
 
 ## WIP
