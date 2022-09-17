@@ -1,5 +1,7 @@
 package djluis.sandbox.sorting;
 
+import static djluis.sandbox.sorting.SortingUtils.swap;
+
 public class QuickSort implements SortAlgorithm {
 
     public void Sort(int[] array) {
@@ -8,7 +10,6 @@ public class QuickSort implements SortAlgorithm {
 
     private void Sort(int[] array, int lower, int upper) {
         if (lower < upper) {
-
             int partitionIdx = partition(array, lower, upper);
 
             Sort(array, lower, partitionIdx - 1);
@@ -16,11 +17,7 @@ public class QuickSort implements SortAlgorithm {
         }
     }
 
-    private void swap(int[] array, int indexA, int indexB) {
-        int tmp = array[indexA];
-        array[indexA] = array[indexB];
-        array[indexB] = tmp;
-    }
+
 
     private int partition(int[] array, int lower, int upper) {
         int pivot = array[upper];

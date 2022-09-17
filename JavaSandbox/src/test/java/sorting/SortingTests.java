@@ -1,8 +1,6 @@
 package sorting;
 
-import djluis.sandbox.sorting.MergeSort;
-import djluis.sandbox.sorting.QuickSort;
-import djluis.sandbox.sorting.SortAlgorithm;
+import djluis.sandbox.sorting.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -23,7 +21,7 @@ public class SortingTests {
 
     @BeforeAll
     public static void prepareArray() {
-        // We need the base array to be equal for all sort algorithms
+        // We need the base array to be equal for all sort algorithms to be fair
         BASE_RANDOM_ARRAY = randomArrayGenerator(RANDOM_ARRAY_SIZE);
     }
 
@@ -39,8 +37,10 @@ public class SortingTests {
 
     static Stream<SortAlgorithm> sortAlgorithms() {
         return Stream.of(
+                new MergeSort(),
                 new QuickSort(),
-                new MergeSort()
+                new BubbleSort(),
+                new HeapSort()
         );
     }
 

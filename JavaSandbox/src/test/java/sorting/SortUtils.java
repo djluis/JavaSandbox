@@ -8,7 +8,7 @@ public class SortUtils {
         Random rnd = new Random();
 
         for (int i = 0; i < randomArray.length; i++) {
-            randomArray[i] = rnd.nextInt();
+            randomArray[i] = rnd.nextInt(10);
         }
 
         return randomArray;
