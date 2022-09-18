@@ -14,6 +14,7 @@ ext {
 }
 
 dependencies {
+    implementation "org.jgrapht:jgrapht-core:1.5.1"
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
     testImplementation "org.junit.jupiter:junit-jupiter-params:$junitVersion"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
