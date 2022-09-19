@@ -41,7 +41,7 @@ Only non recursive and "stable" algorithms are welcomed here. If you can't hold 
 | Algorithm                       |Time complexity|Space complexity|   Is Recursive   |           Notes            |
 |---------------------------------|:-------------:|:--------------:|:----------------:|:--------------------------:|
 | Breadth First Search (aka BFS)  |   O(V + E)    |      O(V)      |       :x:        | Auxiliary structure: Queue |
-| Depth-first traversal (aka DFS) |   O(V + E)    |      O(V)      |:white_check_mark:|                            |
+| Depth-first traversal (aka DFS) |   O(V + E)    |      O(V)      |       :x:        | Auxiliary structure: Stack |
 
 * v -> Vertices
 * e -> Edges
