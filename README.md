@@ -7,8 +7,7 @@ Just a safe java repo for some geek experiences
 I have created a setup to test and compare multiple Sorting Algorithms.
 They have been built with simplicity in mind, for the sake of readability
 
-PS: This is not a benchmark, for that multiple consecutive runs are mandatory to obtain a precise measure to avoid any
-JIT compile suprises
+## Standard Implementations :tired_face: (Boring versions, only used for elementary school to teach kids how to sort and array)
 
 | Algorithm  |Time complexity|Space complexity|    Is Recursive    |                Notes                |
 |------------|:-------------:|:--------------:|:------------------:|:-----------------------------------:|
@@ -18,6 +17,18 @@ JIT compile suprises
 | Buble Sort |    O(n^2)     |      O(1)      |        :x:         |      :snail:    Stable :snail:      |
 
 * n -> Array size
+
+## Where the fun begins :heart_eyes:
+
+### WIP
+
+Only non recursive and "stable" algorithms are welcomed here. If you can't hold bick dick arrays without causing stack overflow so please leave now. 
+
+| Algorithm  |Time complexity|Space complexity|    Is Recursive    |                Notes                |
+|------------|:-------------:|:--------------:|:------------------:|:-----------------------------------:|
+| Quick Sort Random pivot                    | O(n * log n)  |    O(log n)    | :x: |                    |
+| Quick Sort + Selection Sort with threshold | O(n * log n)  |    O(log n)    | :x: |                    |
+| Parallel Merge Sort                        | O(n * log n)  |      O(n)      | :x: |                    |
 
 ## Result
 
@@ -34,3 +45,7 @@ JIT compile suprises
 
 * v -> Vertices
 * e -> Edges
+
+# Disclaimer
+This is not a benchmark, for that multiple consecutive runs are mandatory to obtain a precise measure to avoid any
+JIT compile suprises
