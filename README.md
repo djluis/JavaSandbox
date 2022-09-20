@@ -22,7 +22,7 @@ They have been built with simplicity in mind, for the sake of readability
 
 ### WIP
 
-Only non recursive and "stable" algorithms are welcomed here. If you can't hold bick dick arrays without causing stack overflow so please leave now. 
+Only non recursive and "stable" algorithms are welcomed here. If you can't hold big dick arrays without causing stack overflow so please leave now. 
 
 | Algorithm                                  |Time complexity|  Space complexity  |Is Recursive|        Notes        |
 |--------------------------------------------|:-------------:|:------------------:|:----------:|:-------------------:|
