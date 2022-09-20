@@ -29,6 +29,7 @@ Only non recursive and "stable" algorithms are welcomed here. If you can't hold 
 | Quick Sort Random pivot                    | O(n * log n)  |        O(n)        |    :x:     |                     |
 | Quick Sort + Selection Sort with threshold | O(n * log n)  |        O(n)        |    :x:     |                     |
 | Parallel Merge Sort                        | O(n * log n)  |        O(n)        |    :x:     |                     |
+| Internal Java Array Sorting implementation | ----          |       ----         |    ----    |  Uses a quickSort dual pivot, tuned to the bone , I plan to dissect this sorting algorithm later|
 
 ## Result
 
