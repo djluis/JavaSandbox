@@ -2,7 +2,7 @@ package djluis.sandbox.sorting;
 
 public class MergeSort implements SortAlgorithm {
     @Override
-    public void Sort(int[] array) {
+    public void sort(int[] array) {
         Sort(array, 0, array.length - 1);
     }
 

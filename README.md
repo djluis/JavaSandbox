@@ -24,11 +24,11 @@ They have been built with simplicity in mind, for the sake of readability
 
 Only non recursive and "stable" algorithms are welcomed here. If you can't hold bick dick arrays without causing stack overflow so please leave now. 
 
-| Algorithm  |Time complexity|Space complexity|    Is Recursive    |                Notes                |
-|------------|:-------------:|:--------------:|:------------------:|:-----------------------------------:|
-| Quick Sort Random pivot                    | O(n * log n)  |    O(log n)    | :x: |                    |
-| Quick Sort + Selection Sort with threshold | O(n * log n)  |    O(log n)    | :x: |                    |
-| Parallel Merge Sort                        | O(n * log n)  |      O(n)      | :x: |                    |
+| Algorithm                                  |Time complexity|  Space complexity  |Is Recursive|        Notes        |
+|--------------------------------------------|:-------------:|:------------------:|:----------:|:-------------------:|
+| Quick Sort Random pivot                    | O(n * log n)  |        O(n)        |    :x:     |                     |
+| Quick Sort + Selection Sort with threshold | O(n * log n)  |        O(n)        |    :x:     |                     |
+| Parallel Merge Sort                        | O(n * log n)  |        O(n)        |    :x:     |                     |
 
 ## Result
 

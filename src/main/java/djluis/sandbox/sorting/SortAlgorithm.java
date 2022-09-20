@@ -1,5 +1,5 @@
 package djluis.sandbox.sorting;
 
 public interface SortAlgorithm {
-    void Sort(int[] array);
+    void sort(int[] array);
 }

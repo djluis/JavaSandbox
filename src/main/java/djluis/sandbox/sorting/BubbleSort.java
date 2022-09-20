@@ -7,7 +7,7 @@ import static djluis.sandbox.sorting.SortingUtils.swap;
  */
 public class BubbleSort implements SortAlgorithm {
     @Override
-    public void Sort(int[] array) {
+    public void sort(int[] array) {
         for (int idx = 0; idx < array.length - 1; idx++) {
             for (int internalIdx = 0; internalIdx < array.length - idx - 1; internalIdx++) {
                 if (array[internalIdx] > array[internalIdx + 1]) {

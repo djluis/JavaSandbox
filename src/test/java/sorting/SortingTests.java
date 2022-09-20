@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.util.Arrays;
 import java.util.stream.Stream;
 
 import static sorting.SortTestUtils.isArraySorted;
@@ -15,7 +16,7 @@ import static sorting.SortTestUtils.randomArrayGenerator;
 
 public class SortingTests {
 
-    private static final int RANDOM_ARRAY_SIZE = 100000;
+    private static final int RANDOM_ARRAY_SIZE = 20000;
 
     private static int[] BASE_RANDOM_ARRAY;
 
@@ -31,7 +32,18 @@ public class SortingTests {
     public void testSortingAlgorithm(SortAlgorithm sortAlgorithm) {
         int[] intArray = new int[BASE_RANDOM_ARRAY.length];
         System.arraycopy(BASE_RANDOM_ARRAY, 0, intArray, 0, intArray.length);
-        sortAlgorithm.Sort(intArray);
+        sortAlgorithm.sort(intArray);
+        Assertions.assertTrue(isArraySorted(intArray));
+    }
+
+    @DisplayName("Test with @MethodSource")
+    @ParameterizedTest(name = "{0}")
+    @MethodSource("sortAlgorithms")
+    public void testSortingAlgorithmWithSortedArray(SortAlgorithm sortAlgorithm) {
+        int[] intArray = new int[BASE_RANDOM_ARRAY.length];
+        System.arraycopy(BASE_RANDOM_ARRAY, 0, intArray, 0, intArray.length);
+        Arrays.sort(intArray);
+        sortAlgorithm.sort(intArray);
         Assertions.assertTrue(isArraySorted(intArray));
     }
 
@@ -40,7 +52,9 @@ public class SortingTests {
                 new HeapSort(),
                 new MergeSort(),
                 new QuickSort(),
-                new BubbleSort()
+                new QuickSortRndPivotIterative(),
+                new BubbleSort(),
+                new InternalJavaArraySort()
         );
     }
 

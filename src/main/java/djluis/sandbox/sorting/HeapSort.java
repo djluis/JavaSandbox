@@ -4,7 +4,7 @@ import static djluis.sandbox.sorting.SortingUtils.swap;
 
 public class HeapSort implements SortAlgorithm {
     @Override
-    public void Sort(int[] array) {
+    public void sort(int[] array) {
 
         for (int idx = (array.length / 2) - 1; idx >= 0; idx--)
             heapify(array, array.length, idx);
