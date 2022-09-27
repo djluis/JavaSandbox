@@ -22,13 +22,14 @@ They have been built with simplicity in mind, for the sake of readability
 
 ### WIP
 
-Only non recursive and "stable" algorithms are welcomed here. If you can't hold bick dick arrays without causing stack overflow so please leave now. 
+Only non recursive and "stable" algorithms are welcomed here. If you can't hold big dick arrays without causing stack overflow so please leave now. 
 
 | Algorithm                                  |Time complexity|  Space complexity  |Is Recursive|        Notes        |
 |--------------------------------------------|:-------------:|:------------------:|:----------:|:-------------------:|
 | Quick Sort Random pivot                    | O(n * log n)  |        O(n)        |    :x:     |                     |
 | Quick Sort + Selection Sort with threshold | O(n * log n)  |        O(n)        |    :x:     |                     |
 | Parallel Merge Sort                        | O(n * log n)  |        O(n)        |    :x:     |                     |
+| Internal Java Array Sorting implementation | ----          |       ----         |    ----    |  Uses a quickSort dual pivot, tuned to the bone , I plan to dissect this sorting algorithm later|
 
 ## Result
 
