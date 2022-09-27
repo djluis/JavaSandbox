@@ -3,17 +3,17 @@ package djluis.sandbox.sorting;
 public class MergeSort implements SortAlgorithm {
     @Override
     public void sort(int[] array) {
-        Sort(array, 0, array.length - 1);
+        sort(array, 0, array.length - 1);
     }
 
-    private void Sort(int[] array, int lower, int upper) {
+    private void sort(int[] array, int lower, int upper) {
         if (lower >= upper)
             return;
 
         int middleIndex = (lower + upper) / 2;
 
-        Sort(array, lower, middleIndex);
-        Sort(array, middleIndex + 1, upper);
+        sort(array, lower, middleIndex);
+        sort(array, middleIndex + 1, upper);
         merge(array, lower, middleIndex, upper);
     }
 
