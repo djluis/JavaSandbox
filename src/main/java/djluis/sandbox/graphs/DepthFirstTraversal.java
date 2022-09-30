@@ -27,6 +27,6 @@ public class DepthFirstTraversal<K> {
             }
         }
 
-        return visited;
+        return visited;  // return an ordered set with all the connections to the K root
     }
 }
